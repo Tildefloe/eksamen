@@ -1,0 +1,32 @@
+.burger-menu {
+  font-size: 2rem;
+  cursor: pointer;
+  display: none;
+  color: #771515;
+  width: 100%;
+}
+#burger-toggle {
+  display: none;
+}
+
+/* vis burger icon i mobile view */
+.burger-menu {
+  display: block;
+}
+
+/* skjul menuen */
+nav ul {
+  display: none;
+  background: #771515;
+  position: absolute;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 32.1%;
+  height: 100%; /* bredden er 100% minus højre/venstre padding */ /* bredden er 100% minus højre/venstre padding */
+}
+
+/* vis menu når checkbox er checked */
+#burger-toggle:checked + label + nav ul {
+  display: block;
+}
