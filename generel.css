@@ -1,3 +1,4 @@
+/* Burgermenu kode */
 .burger-menu {
   font-size: 2rem;
   cursor: pointer;
@@ -8,7 +9,6 @@
 #burger-toggle {
   display: none;
 }
-
 /* vis burger icon i mobile view */
 .burger-menu {
   display: block;
@@ -25,8 +25,18 @@ nav ul {
   width: 32.1%;
   height: 100%; /* bredden er 100% minus højre/venstre padding */ /* bredden er 100% minus højre/venstre padding */
 }
-
 /* vis menu når checkbox er checked */
 #burger-toggle:checked + label + nav ul {
   display: block;
+}
+/* Herosection kode */
+.herosection {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+.herosection,
+img {
+  width: 100%;
+  height: auto;
 }
