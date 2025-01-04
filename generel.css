@@ -1,3 +1,7 @@
+@font-face {
+  font-family: montserrat;
+  src: url(font/Montserrat-Light.ttf);
+}
 .body {
   background-color: #f6f6ea;
 }
@@ -6,7 +10,7 @@
   font-size: 2rem;
   cursor: pointer;
   display: none;
-  color: #593c32;
+  color: #6a84a6;
   width: 100%;
 }
 #burger-toggle {
@@ -20,20 +24,29 @@
 /* skjul menuen */
 nav ul {
   display: none;
-  background: #593c32;
+  background: #6a84a6;
   position: absolute;
   list-style: none;
   padding: 0;
   margin: 0;
-  width: 32.1%;
-  height: 100%; /* bredden er 100% minus højre/venstre padding */ /* bredden er 100% minus højre/venstre padding */
+  width: 50%;
+  height: 100%; /* bredden er 100% minus højre/venstre padding */
   z-index: 1; /*sørger for at burgermenuen ligger oven på herosection*/
+  font-family: montserrat;
+}
+a:link {
+  text-decoration: none;
+  color: #f6f6ea;
+}
+nav a:visited {
+  color: #f6f6ea;
 }
 /* vis menu når checkbox er checked */
 #burger-toggle:checked + label + nav ul {
   display: block;
 }
 /* Herosection kode */
+
 .herosection {
   position: relative;
   width: 100%;
