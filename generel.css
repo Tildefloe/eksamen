@@ -1,9 +1,12 @@
+.body {
+  background-color: #f6f6ea;
+}
 /* Burgermenu kode */
 .burger-menu {
   font-size: 2rem;
   cursor: pointer;
   display: none;
-  color: #771515;
+  color: #593c32;
   width: 100%;
 }
 #burger-toggle {
@@ -17,13 +20,14 @@
 /* skjul menuen */
 nav ul {
   display: none;
-  background: #771515;
+  background: #593c32;
   position: absolute;
   list-style: none;
   padding: 0;
   margin: 0;
   width: 32.1%;
   height: 100%; /* bredden er 100% minus højre/venstre padding */ /* bredden er 100% minus højre/venstre padding */
+  z-index: 1; /*sørger for at burgermenuen ligger oven på herosection*/
 }
 /* vis menu når checkbox er checked */
 #burger-toggle:checked + label + nav ul {
@@ -39,4 +43,22 @@ nav ul {
 img {
   width: 100%;
   height: auto;
+}
+/* tema galleri kode */
+.tema_galleri {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+.tema_galleri img {
+  width: 200px;
+  height: auto;
+  object-fit: cover;
+  aspect-ratio: 10/10;
+  opacity: 0.5;
+}
+.tema_galleri img:hover {
+  opacity: 1;
 }
