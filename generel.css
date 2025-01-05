@@ -14,18 +14,22 @@ header {
   align-items: center;
   padding: 10px 20px;
 }
-.body {
-  color: white;
+body {
+  background-color: #f6f1ea;
+}
+.om_mig_body {
+  background-color: #bbae9c;
 }
 footer {
   text-align: center;
   font-family: montserrat;
+  margin-top: 15%;
 }
 nav ul {
   list-style: none;
   display: flex;
   gap: 20px;
-  margin: 0;
+  margin-top: 20px;
   padding: 0;
 }
 
@@ -39,8 +43,19 @@ nav a {
 nav a:hover {
   color: #6a84a6;
 }
+/* Navbar scroll kode */
+#navbar_hide {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: transform 0.7s ease;
+}
+#navbar_hide.hidden {
+  transform: translateY(-100%);
+}
+
 .forside_billede img {
-  max-width: 500px;
+  width: 400px;
   height: auto;
 }
 /* tema galleri kode */
@@ -62,14 +77,15 @@ nav a:hover {
   opacity: 1;
 }
 .om_mig_galleri img {
-  width: 500px;
+  width: 400px;
   height: auto;
   object-fit: cover;
   aspect-ratio: 10/10;
-  opacity: 0.5;
+  margin-top: 25%;
 }
-.om_mig_galleri img:hover {
-  opacity: 1;
+.velkommen {
+  display: grid;
+  place-items: center;
 }
 /* Om mig-site css */
 h1,

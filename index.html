@@ -10,7 +10,7 @@
   <body>
     <header>
       <div>
-        <nav>
+        <nav id="navbar_hide">
           <ul>
             <li><a href="index.html">Forside</a></li>
             <li><a href="portfolio.html">Portfolio</a></li>
@@ -25,6 +25,13 @@
           src="billeder/herosection_billede.webp"
           alt="Forside billede portfolio"
         />
+      </div>
+      <div class="velkommen">
+        <p>
+          Velkommen til mit portfolio over 1. semester på Multimediedesign på
+          KEA. På denne hjemmeside vil I kunne finde information om det jeg har
+          lært de sidste 6 måneder på uddannelsen samt et CV. Tag et kig!
+        </p>
       </div>
       <div class="tema_galleri">
         <a href="tema1.html">
@@ -54,5 +61,21 @@
     <footer>
       <div>Tilde Fløe Sørensen // Portfolio eksamen 2025</div>
     </footer>
+    <script>
+      let lastScrollTop = 0;
+      const navbar = document.getElementById("navbar_hide");
+
+      window.addEventListener("scroll", () => {
+        const currentScroll = window.pageYOffset;
+
+        if (currentScroll > lastScrollTop) {
+          navbar.classList.add("hidden");
+        } else {
+          navbar.classList.remove("hidden");
+        }
+
+        lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+      });
+    </script>
   </body>
 </html>
