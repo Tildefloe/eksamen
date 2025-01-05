@@ -93,6 +93,9 @@ h2,
 p {
   font-family: montserrat;
 }
+h1 {
+  margin-top: 50px;
+}
 
 .portreatbillede {
   display: grid;
@@ -111,7 +114,8 @@ ul {
 }
 .grid_billeder {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  place-items: center;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   max-width: 400px;
   margin: 0;
