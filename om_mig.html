@@ -10,7 +10,7 @@
   <body class="om_mig_body">
     <header>
       <div>
-        <nav>
+        <nav id="navbar_hide">
           <ul>
             <li><a href="index.html">Forside</a></li>
             <li><a href="portfolio.html">Portfolio</a></li>
@@ -85,5 +85,21 @@
     <footer>
       <div>Tilde Fløe Sørensen // Portfolio eksamen 2025</div>
     </footer>
+    <script>
+      let lastScrollTop = 0;
+      const navbar = document.getElementById("navbar_hide");
+
+      window.addEventListener("scroll", () => {
+        const currentScroll = window.pageYOffset;
+
+        if (currentScroll > lastScrollTop) {
+          navbar.classList.add("hidden");
+        } else {
+          navbar.classList.remove("hidden");
+        }
+
+        lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+      });
+    </script>
   </body>
 </html>

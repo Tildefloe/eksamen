@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <link rel="stylesheet" href="generel.css" />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <header>
+      <div>
+        <nav id="navbar_hide">
+          <ul>
+            <li><a href="index.html">Forside</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="om_mig.html">Om mig</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main></main>
+    <footer></footer>
+    <script>
+      let lastScrollTop = 0;
+      const navbar = document.getElementById("navbar_hide");
+
+      window.addEventListener("scroll", () => {
+        const currentScroll = window.pageYOffset;
+
+        if (currentScroll > lastScrollTop) {
+          navbar.classList.add("hidden");
+        } else {
+          navbar.classList.remove("hidden");
+        }
+
+        lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+      });
+    </script>
+  </body>
+</html>
