@@ -17,7 +17,8 @@ header {
 body {
   background-color: #f6f1ea;
 }
-.om_mig_body {
+.om_mig_body,
+.tema1_body {
   background-color: #bbae9c;
 }
 footer {
@@ -90,6 +91,7 @@ nav a:hover {
 /* Om mig-site css */
 h1,
 h2,
+h3,
 p {
   font-family: montserrat;
 }
@@ -97,7 +99,8 @@ h1 {
   margin-top: 50px;
 }
 
-.portreatbillede {
+.portreatbillede,
+.tema1 {
   display: grid;
   place-items: center;
 }
@@ -129,4 +132,9 @@ ul {
 .grid_billeder img:nth-child(2) {
   grid-column: 2/4;
   grid-row: 2/4;
+}
+/* Tema 1 kode */
+.tema1 img {
+  width: 80%;
+  height: auto;
 }
