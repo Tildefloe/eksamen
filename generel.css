@@ -140,25 +140,21 @@ ul {
   height: auto;
 }
 /* Tema 2 kode */
-.t02_1 {
-  width: 60%;
-  height: auto;
-}
+.t02_1,
 .t02_2,
+.t02_3,
 .roter_billede {
   width: 60%;
   height: auto;
 }
+
 .grid_t02 {
   display: grid;
   place-items: center;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
 }
-.t02_3 {
-  width: 60%;
-  height: auto;
-}
+
 .t02_4,
 .t05_billede1,
 .t05_billede2 {
@@ -191,4 +187,12 @@ ul {
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr;
 }
-/* Tema 5 kode */
+.knap {
+  display: grid;
+  place-items: center;
+  grid-template-columns: 1fr 1fr;
+}
+
+.knap img {
+  width: 60%;
+}
