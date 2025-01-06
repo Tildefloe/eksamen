@@ -18,7 +18,8 @@ body {
   background-color: #f6f1ea;
 }
 .om_mig_body,
-.tema1_body {
+.tema1_body,
+.tema2_body {
   background-color: #bbae9c;
 }
 footer {
@@ -100,7 +101,8 @@ h1 {
 }
 
 .portreatbillede,
-.tema1 {
+.tema1,
+.tema2 {
   display: grid;
   place-items: center;
 }
@@ -137,4 +139,37 @@ ul {
 .tema1 img {
   width: 80%;
   height: auto;
+}
+/* Tema 2 kode */
+.t02_1 {
+  width: 60%;
+  height: auto;
+}
+.t02_2 {
+  width: 60%;
+  height: auto;
+}
+.grid_t02 {
+  display: grid;
+  place-items: center;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.t02_3 {
+  width: 60%;
+  height: auto;
+}
+.t02_4 {
+  width: 90%;
+  height: auto;
+}
+.t02_5 {
+  width: 85%;
+  height: auto;
+}
+.grid2_t02 {
+  display: grid;
+  place-items: center;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
 }
