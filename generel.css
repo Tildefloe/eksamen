@@ -191,6 +191,7 @@ ul {
   display: grid;
   place-items: center;
   grid-template-columns: 1fr 1fr;
+  margin-top: 20px;
 }
 
 .knap img {
