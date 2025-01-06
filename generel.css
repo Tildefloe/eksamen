@@ -19,7 +19,8 @@ body {
 }
 .om_mig_body,
 .tema1_body,
-.tema2_body {
+.tema2_body,
+.tema3_body {
   background-color: #bbae9c;
 }
 footer {
@@ -102,7 +103,8 @@ h1 {
 
 .portreatbillede,
 .tema1,
-.tema2 {
+.tema2,
+.tema3 {
   display: grid;
   place-items: center;
 }
