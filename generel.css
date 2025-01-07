@@ -197,3 +197,96 @@ ul {
 .knap img {
   width: 60%;
 }
+@media (width > 500px) {
+  .forside_billede img {
+    width: 1250px;
+    height: auto;
+  }
+  .velkommen p {
+    width: 600px;
+    background-color: #bbae9c;
+    border-radius: 2px;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+  .tema_galleri {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr;
+  }
+  .tema_galleri img {
+    width: 400px;
+  }
+  .portfolio h3 {
+    margin-left: 350px;
+    margin-right: 350px;
+  }
+  .grid_cv {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    margin-top: 50px;
+  }
+  .portreatbillede p {
+    display: grid;
+    place-items: center;
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+  .portreatbillede img {
+    width: 300px;
+    height: 400px;
+    margin-top: 30px;
+  }
+  .grid_billeder {
+    margin-left: 400px;
+  }
+  .p_grid {
+    margin-right: 300px;
+    margin-left: 300px;
+  }
+  .tema1,
+  .tema3 img {
+    width: 500px;
+  }
+  .tema1,
+  .tema2 {
+    margin-right: 300px;
+    margin-left: 300px;
+  }
+
+  .grid_t02,
+  .p_t04,
+  .p_2,
+  .p_t05 {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  .t02_3,
+  .t02_4 {
+    width: 400px;
+  }
+  .grid2_t02 {
+    width: 400px;
+  }
+  .grid2_t02 {
+    gap: 10px;
+  }
+  .p_t03,
+  .pt04 {
+    margin-left: 150px;
+    margin-right: 150px;
+  }
+  .grid_t04 img {
+    width: 300px;
+  }
+  .t05_billede1,
+  .t05_billede2 {
+    width: 200px;
+  }
+  .t05_4_billede {
+    width: 500px;
+  }
+}
