@@ -144,6 +144,7 @@ ul {
 .t02_2,
 .t02_3,
 .t05_1_billede,
+.t02_4,
 .roter_billede {
   width: 60%;
   height: auto;
@@ -163,11 +164,14 @@ ul {
   height: auto;
 }
 .t02_5,
+.t02_4,
+.t03_4,
 .aktivitetsdiagram,
 .t05_4_billede {
   width: 85%;
   height: auto;
 }
+
 .grid2_t02 {
   display: grid;
   place-items: center;
