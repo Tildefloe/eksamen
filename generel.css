@@ -143,6 +143,7 @@ ul {
 .t02_1,
 .t02_2,
 .t02_3,
+.t05_1_billede,
 .roter_billede {
   width: 60%;
   height: auto;
@@ -155,7 +156,7 @@ ul {
   grid-template-rows: 1fr;
 }
 
-.t02_4,
+.t04_1,
 .t05_billede1,
 .t05_billede2 {
   width: 90%;
@@ -264,7 +265,9 @@ ul {
     margin-left: 100px;
     margin-right: 100px;
   }
-  .t02_3 {
+  .t02_3,
+  .t04_1,
+  .t05_1_billede {
     width: 400px;
   }
   .p_t03,
